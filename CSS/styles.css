@@ -126,7 +126,7 @@ img {
 .hdr-link:hover,
 .hdr-link:focus {
   color: var(--button-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -160,7 +160,7 @@ img {
 .hdr-nav-mail:hover,
 .hdr-nav-mail:focus {
   color: var(--button-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail {
@@ -476,7 +476,8 @@ img {
 .soc-link:focus {
   color: var(--back-color);
   background-color: var(--button-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------section CLIENTS---------------- */
@@ -524,7 +525,8 @@ img {
 .clients-link:focus {
   color: var(--button-color);
   border: 1px solid var(--button-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------FOOTER------------------ */
@@ -574,7 +576,7 @@ img {
 .ftr-nav-map:hover,
 .ftr-nav-map:focus {
   color: var(--button-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-mail {
@@ -587,7 +589,7 @@ img {
 .ftr-mail:hover,
 .ftr-mail:focus {
   color: var(--button-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-item {
@@ -642,7 +644,8 @@ img {
 .ftr-soc-link:focus {
   color: var(--back-color);
   background-color: var(--button-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -697,7 +700,9 @@ img {
   background-color: var(--button-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------------section WORK------- */
@@ -736,9 +741,10 @@ img {
 
 .work-box:hover,
 .work-box:focus {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-box {
@@ -762,7 +768,8 @@ img {
 .work-box:hover .work-overlay {
   opacity: 1;
   transform: translateY(-100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-box-text {
@@ -777,7 +784,7 @@ img {
 
 .work-box:hover .work-box-text {
   opacity: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-img-text {
 }
