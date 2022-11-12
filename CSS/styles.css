@@ -10,8 +10,6 @@
 }
 
 body {
-  width: 1600px;
-
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -44,6 +42,7 @@ ul {
 }
 
 .section {
+  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -100,6 +99,7 @@ img {
 .hdr-link {
   text-decoration: none;
   color: var(--h-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -126,7 +126,6 @@ img {
 .hdr-link:hover,
 .hdr-link:focus {
   color: var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -155,12 +154,12 @@ img {
 .hdr-nav-mail {
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hdr-nav-mail:hover,
 .hdr-nav-mail:focus {
   color: var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail {
@@ -223,6 +222,14 @@ img {
   letter-spacing: 0.06em;
   color: var(--back-color);
   background-color: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -464,6 +471,8 @@ img {
   color: #afb1b8;
   background-color: var(--back-color);
   border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-instagram {
@@ -476,8 +485,6 @@ img {
 .soc-link:focus {
   color: var(--back-color);
   background-color: var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------section CLIENTS---------------- */
@@ -515,6 +522,8 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: var(--back-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients {
@@ -525,8 +534,6 @@ img {
 .clients-link:focus {
   color: var(--button-color);
   border: 1px solid var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------FOOTER------------------ */
@@ -571,12 +578,12 @@ img {
   line-height: 1.71;
   color: var(--back-color);
   background-color: var(--hero-back-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-nav-map:hover,
 .ftr-nav-map:focus {
   color: var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-mail {
@@ -585,11 +592,11 @@ img {
   text-decoration: none;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ftr-mail:hover,
 .ftr-mail:focus {
   color: var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-item {
@@ -632,6 +639,7 @@ img {
   color: #afb1b8;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-soc-icon {
@@ -642,10 +650,7 @@ img {
 
 .ftr-soc-link:hover,
 .ftr-soc-link:focus {
-  color: var(--back-color);
   background-color: var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -692,6 +697,9 @@ img {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--h-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -700,9 +708,6 @@ img {
   background-color: var(--button-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------------section WORK------- */
@@ -743,11 +748,10 @@ img {
 .work-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-box {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-img-box {
@@ -762,14 +766,13 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
   transform: translateY(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-box:hover .work-overlay {
   opacity: 1;
   transform: translateY(-100%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-box-text {
@@ -780,11 +783,11 @@ img {
   width: 322px;
   height: 168px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-box:hover .work-box-text {
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-img-text {
 }
